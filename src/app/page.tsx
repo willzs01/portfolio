@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, Mail, Download, ArrowLeft } from 'lucide-react'
+import { Github, Linkedin,  Download, ArrowLeft } from 'lucide-react'
 import { VerticalMenu } from '@/components/VerticalMenu'
 
 export default function ProfilePage() {
@@ -261,7 +261,7 @@ export default function ProfilePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm md:text-base leading-relaxed">
-                    I'm a passionate Web developer with a keen eye for design and a love for creating 
+                    I&lsquo;m a passionate Web developer with a keen eye for design and a love for creating 
                     seamless user experiences. With a strong foundation in modern web technologies, 
                     I strive to build responsive and accessible web applications that make a difference.
                   </p>
@@ -283,7 +283,7 @@ export default function ProfilePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm md:text-base">
-                    I'm always open to new opportunities and collaborations. 
+                    I&lsquo;m always open to new opportunities and collaborations. 
                     Feel free to reach out to me at{' '}
                     <a 
                       href="mailto:williamsfolorunso07@gmail.com" 
