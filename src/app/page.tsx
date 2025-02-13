@@ -111,11 +111,13 @@ export default function ProfilePage() {
           {/* Header Section */}
           <motion.div variants={itemVariants} className="flex flex-col md:flex-row gap-6 items-center md:items-start" id="home">
             <div className="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-purple-300/20 overflow-hidden flex-shrink-0 bg-black/40 backdrop-blur-sm shadow-lg shadow-purple-900/30">
-              <img
-                src="2.jpg"
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
+            <img
+        src="/21.jpg"
+        alt="Profile"
+        width={192}
+        height={192}
+        className="rounded-full border-4 border-gray-500 overflow-hidden flex-shrink-0"
+      />
             </div>
             <motion.div
               variants={cardHoverVariants}
@@ -126,8 +128,8 @@ export default function ProfilePage() {
               <Card className="bg-black/40 backdrop-blur-sm border-none text-white">
                 <CardContent className="pt-6">
                   <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-300 to-pink-300 text-transparent bg-clip-text">Williams Folorunso</h1>
-                  <h4 className="text-lg md:text-xl font-bold mb-2 text-pink-200">Web-Developer</h4>
-                  <p className="text-pink-100">Frontend Specialist</p>
+                  <h4 className="text-lg md:text-xl font-bold mb-2 text-pink-200">software-Developer</h4>
+                  <p className="text-pink-100">Fullstack Engineer <br/><span className="text-blue-300 uppercase">front-end Specialist</span></p>
                   <p className="text-white/70 text-sm md:text-base mt-2">
                     Solving complex challenges into elegant, user-friendly digital solutions.
                   </p>
@@ -184,7 +186,10 @@ export default function ProfilePage() {
                       "JavaScript",
                       "React.js",
                       "Next.js",
+                      "React Native",
+                      "Node.js",
                       "Responsive UI",
+                      "Restful API",
                       "Tailwind",
                       "Bootstrap",
                       "Git"
@@ -214,7 +219,9 @@ export default function ProfilePage() {
             >
               <Card className="bg-black/40 backdrop-blur-sm border-none text-white">
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-purple-200 text-xl md:text-2xl">Projects</CardTitle>
+                  <CardTitle className="text-purple-200 text-xl md:text-2xl">Sample Projects
+                    <p className="text-sm text-white/70">[access more on my github]</p>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -240,6 +247,7 @@ export default function ProfilePage() {
                       <h3 className="font-semibold mb-2 text-purple-200">Portfolio Website</h3>
                       <p className="text-sm text-white/70">
                         Modern, responsive portfolio showcasing my work and skills
+                        <br />codes assecible form my github.
                       </p>
                     </motion.div>
                   </div>
@@ -264,7 +272,8 @@ export default function ProfilePage() {
                     I&lsquo;m a passionate Web developer with a keen eye for design and a love for creating 
                     seamless user experiences. With a strong foundation in modern web technologies, 
                     I strive to build responsive and accessible web applications that make a difference.
-                  </p>
+                  </p><br/>
+                  Team member, frontend role <a href='https://x.com/BuildsaasPro'><span className='text-blue-300'>@BuildSaas</span></a>, a startup that provides service to businesses
                 </CardContent>
               </Card>
             </motion.div>

@@ -1,66 +1,26 @@
-'use client'
-
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Home, User, Briefcase, Code, Mail, Menu } from 'lucide-react'
 import Link from 'next/link'
-
-const menuItems = [
-  { icon: Home, label: 'Home', href: '#home' },
-  { icon: User, label: 'About', href: '#about' },
-  { icon: Code, label: 'Skills', href: '#skills' },
-  { icon: Briefcase, label: 'Projects', href: '#projects' },
-  { icon: Mail, label: 'Contact', href: '#contact' },
-]
-
+import { Home, User, Briefcase, Linkedin } from 'lucide-react'
 export function VerticalMenu() {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
-    <motion.div
-      className="fixed left-0 top-0 h-full bg-black/20 backdrop-blur-md z-10 border-r border-purple-300/10"
-      initial={{ width: '60px' }}
-      animate={{ width: isOpen ? '200px' : '60px' }}
-      transition={{ duration: 0.3, ease: 'easeInOut' }}
-    >
-      <motion.button
-        className="absolute top-4 right-4 p-2 rounded-full bg-purple-500/10 hover:bg-purple-500/20 transition-colors"
-        onClick={() => setIsOpen(!isOpen)}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <Menu size={20} className="text-purple-200" />
-      </motion.button>
-      <nav className="flex flex-col items-start pt-20 w-full">
-        {menuItems.map((item) => (
-          <Link key={item.href} href={item.href} passHref>
-            <motion.a
-              className="flex items-center w-full p-4 hover:bg-purple-500/10 text-purple-200 transition-colors relative group"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="flex items-center gap-4 relative z-10">
-                <item.icon size={20} className="text-purple-300" />
-                <motion.span
-                  className="whitespace-nowrap font-medium"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: isOpen ? 1 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {item.label}
-                </motion.span>
-              </div>
-              <motion.div
-                className="absolute left-0 top-0 h-full bg-purple-500/0 w-1 group-hover:bg-purple-500/20"
-                initial={{ height: '0%' }}
-                whileHover={{ height: '100%' }}
-                transition={{ duration: 0.2 }}
-              />
-            </motion.a>
-          </Link>
-        ))}
-      </nav>
-    </motion.div>
+    <nav className="fixed left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-80 p-4 rounded-lg shadow-lg z-50">
+      <ul className="space-y-6">
+        <MenuItem href="#home" icon={<Home size={24} />} label="Home" />
+        <MenuItem href="#about" icon={<User size={24} />} label="About" />
+        <MenuItem href="#projects" icon={<Briefcase size={24} />} label="Projects" />
+        <MenuItem href="https://www.linkedin.com/in/williams-karina-70b8a7258/" icon={<Linkedin size={24} />} label="Contact" />
+      </ul>
+    </nav>
+  )
+}
+
+function MenuItem({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
+  return (
+    <li>
+      <Link href={href} className="text-white hover:text-purple-300 transition-colors duration-200 flex flex-col items-center">
+        {icon}
+        <span className="sr-only">{label}</span>
+      </Link>
+    </li>
   )
 }
 
