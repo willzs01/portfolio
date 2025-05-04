@@ -272,15 +272,30 @@ export default function ProfilePage() {
                         </span>
                       </motion.a>
                       <motion.a
-                        href="https://https://ai-voice-seven.vercel.app/"
+                        href="https://ai-voice-seven.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.02 }}
                         className="rounded-xl bg-purple-900/30 p-4 shadow-md shadow-purple-900/20 group cursor-pointer"
                       >
-                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">AI voice</h3>
+                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Voice painter</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
                           AI voice model in your native accent.
+                        </p>
+                        <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
+                          View Project →
+                        </span>
+                      </motion.a>
+                      <motion.a
+                        href="https://reactmovieapp-lemon.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        className="rounded-xl bg-purple-900/30 p-4 shadow-md shadow-purple-900/20 group cursor-pointer"
+                      >
+                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Demo Movie app</h3>
+                        <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
+                          Demo movie app..
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
