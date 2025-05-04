@@ -187,19 +187,27 @@ export default function ProfilePage() {
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
                       {[
-                        "HTML",
-                        "CSS",
-                        "JavaScript",
-                        "React.js",
-                        "Next.js",
-                        "React Native",
-                        "Node.js",
-                        "Responsive UI",
-                        "Restful API",
-                        "Tailwind",
-                        "Bootstrap",
-                        "Git"
-                      ].map((skill) => (
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Tailwind CSS',
+  'Node.js',
+  'Express.js',
+  'MongoDB',
+  'Git',
+  'Docker',
+  'AWS',
+  'Python',
+  'Django',
+  'PostgreSQL',
+  'GraphQL',
+  'Redux',
+  'Jest',
+  'Cypress'
+].map((skill) => (
                         <motion.div
                           key={skill}
                           whileHover={{ scale: 1.05 }}
@@ -240,7 +248,7 @@ export default function ProfilePage() {
                       >
                         <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">MatchJobs</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
-                          Job Application platform
+                        A streamlined job application platform connecting applicants with tailored opportunities through a responsive UI.
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
@@ -252,8 +260,7 @@ export default function ProfilePage() {
                       >
                         <h3 className="font-semibold mb-2 text-purple-200">Portfolio Website</h3>
                         <p className="text-sm text-white/70">
-                          Modern, responsive portfolio showcasing my work and skills
-                          <br />codes assecible form my github.
+                        A modern, responsive portfolio site showcasing personal projects and skills with source code hosted on GitHub.
                         </p>
                       </motion.div>
                       <motion.a
@@ -266,6 +273,7 @@ export default function ProfilePage() {
                         <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Pidgin AI Chat Bot</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
                           Your Pidgin AI Companion
+                          An AI-driven chatbot designed to communicate in Pidgin, providing a conversational experience in a native dialect.
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
@@ -280,7 +288,7 @@ export default function ProfilePage() {
                       >
                         <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Voice painter</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
-                          AI voice model in your native accent.
+                        An AI voice model project that speaks in your native accent, enhancing localized voice interactions.
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
@@ -293,9 +301,9 @@ export default function ProfilePage() {
                         whileHover={{ scale: 1.02 }}
                         className="rounded-xl bg-purple-900/30 p-4 shadow-md shadow-purple-900/20 group cursor-pointer"
                       >
-                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Demo Movie app</h3>
+                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors"> Movie app</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
-                          Demo movie app..
+                        A simple movie app demo displaying popular films using dynamic APIs and sleek UI components.
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
