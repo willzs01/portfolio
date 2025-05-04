@@ -134,9 +134,9 @@ export default function ProfilePage() {
                 <Card className="bg-black/40 backdrop-blur-sm border-none text-white">
                   <CardContent className="pt-6">
                     <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-purple-300 to-pink-300 text-transparent bg-clip-text">Williams Folorunso</h1>
-                    <h4 className="text-lg md:text-xl font-bold mb-2 text-pink-200">software-Developer</h4>
-                    <p className="text-pink-100">Fullstack Engineer <br/><span className="text-blue-300 uppercase">front-end Specialist</span></p>
-                    <p className="text-white/70 text-sm md:text-base mt-2">
+                    <h4 className="text-lg md:text-xl font-bold mb-2 text-pink-200">software-Engineer</h4>
+                    <p className="text-pink-100">Fullstack Developer <br/></p>
+                    <p className="text-blue-300 text-sm md:text-base mt-2">
                       Solving complex challenges into elegant, user-friendly digital solutions.
                     </p>
                     <div className="flex flex-wrap gap-4 mt-4">
@@ -226,21 +226,21 @@ export default function ProfilePage() {
                 <Card className="bg-black/40 backdrop-blur-sm border-none text-white">
                   <CardHeader className="pb-2">
                     <CardTitle className="text-purple-200 text-xl md:text-2xl">Sample Projects
-                      <p className="text-sm text-white/70">[access more on my github]</p>
+                      <p className="text-sm text-white/70">[access source code on my github]</p>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <motion.a
-                        href="https://oohdecorations.vercel.app/collections"
+                        href="https://matchjobs.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.02 }}
                         className="rounded-xl bg-purple-900/30 p-4 shadow-md shadow-purple-900/20 group cursor-pointer"
                       >
-                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Ooh Interiors</h3>
+                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">MatchJobs</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
-                          Interior decoration and design showcase platform
+                          Job Application platform
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
@@ -266,6 +266,21 @@ export default function ProfilePage() {
                         <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">Pidgin AI Chat Bot</h3>
                         <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
                           Your Pidgin AI Companion
+                        </p>
+                        <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
+                          View Project →
+                        </span>
+                      </motion.a>
+                      <motion.a
+                        href="https://https://ai-voice-seven.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        className="rounded-xl bg-purple-900/30 p-4 shadow-md shadow-purple-900/20 group cursor-pointer"
+                      >
+                        <h3 className="font-semibold mb-2 text-purple-200 group-hover:text-pink-200 transition-colors">AI voice</h3>
+                        <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors">
+                          AI voice model in your native accent.
                         </p>
                         <span className="text-xs text-pink-300 group-hover:text-pink-200 mt-2 inline-block">
                           View Project →
